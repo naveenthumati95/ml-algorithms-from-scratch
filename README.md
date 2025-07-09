@@ -8,6 +8,3 @@ This repository contains custom implementations of two core machine learning alg
 No external ML libraries (like scikit-learn or XGBoost) were used — this is purely for learning and understanding how these models work under the hood.
 
 ---
-
-## 📁 Folder Structure
-
