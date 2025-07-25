@@ -240,7 +240,7 @@ public:
         int n = X.size();
         vector<T> y_pred(n, base_score);
 
-        for (const auto &tree : trees)
+        for (const auto &tree: trees)
         {
             vector<T> step_pred = tree.predict(X);
             for (int i = 0; i < n; ++i)
@@ -261,7 +261,6 @@ int main()
     vector<vector<double>> X_train(n_samples, vector<double>(n_features));
     vector<double> y_train(n_samples);
 
-    // 🚀 Use exp() based nonlinear function
     for (int i = 0; i < n_samples; ++i)
     {
         X_train[i][0] = dist_x(rng);
@@ -269,7 +268,7 @@ int main()
         y_train[i] = exp(0.3 * X_train[i][0]) + 2.0 * X_train[i][1] + dist_noise(rng);
     }
 
-    XGBoostRegressor<double> model(200, 0.1, 4, 1.0, 0.0, 1.0); // ⬅️ Slightly deeper tree
+    XGBoostRegressor<double> model(200, 0.1, 4, 1.0, 0.0, 1.0); 
     model.fit(X_train, y_train);
 
     vector<double> preds = model.predict(X_train);
