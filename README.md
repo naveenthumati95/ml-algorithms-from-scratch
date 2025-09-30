@@ -41,7 +41,7 @@ To explore the code and run the notebooks, follow these steps:
     ```
 2.  Navigate into the cloned directory:
     ```bash
-    cd your-repository-name
+    cd ml-algorithms-from-scratch
     ```
 3.  Open the `.ipynb` files in a Jupyter environment (like Jupyter Lab or VS Code) to see the models in action.
 
